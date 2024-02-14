@@ -1,0 +1,22 @@
+# Tinh Nguyen
+# dev
+
+manifest:
+
+  # setup remote (github user ....)
+  remotes:
+    - name: upstream
+      url-base: https://github.com/zephyrproject-rtos
+    - name: personal
+      url-base: https://github.com/thaodo2512
+
+  projects:
+  # zephyr upstream
+    - name: zephyr
+      remote: upstream
+      repo-path: zephyr
+      west-commands: scripts/west-commands.yml
+      revision: zephyr-v3.4.0
+
+  self:
+    path: zephyr-application
